@@ -1,7 +1,7 @@
-with open("maps 225719.txt", "r", encoding="utf8")as file:
-    def ip_data():
+with open("maps 225719.txt", "r", encoding="utf8")as myfile:
+    def ip_data(myfile):
         dic = {}
-        for line in file:
+        for line in myfile:
             line = line.strip()
             if line.startswith("PATA"):
                 dic["publication_number"] = line[7:-2]
@@ -10,4 +10,4 @@ with open("maps 225719.txt", "r", encoding="utf8")as file:
             if line.startswith("ABST"):
                 dic["abstract"] = line[5:]
         print (dic)
-    ip_data()
+    ip_data(myfile)
