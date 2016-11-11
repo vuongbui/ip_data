@@ -17,5 +17,7 @@ def parse_patent_data_file(myfile):
 
 if __name__ == '__main__':
 
-    with open("maps 225719.txt", "r", encoding="utf8")as myfile:
+    target_file = "maps 225719.txt"
+
+    with open(target_file, "r", encoding="utf8")as myfile:
         parse_patent_data_file(myfile)
