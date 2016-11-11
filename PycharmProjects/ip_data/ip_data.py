@@ -1,7 +1,7 @@
 
 
 
-def ip_data(myfile):
+def parse_patent_data_file(myfile):
     dic = {}
     for line in myfile:
         line = line.strip()
@@ -16,4 +16,4 @@ def ip_data(myfile):
 
 
 with open("maps 225719.txt", "r", encoding="utf8")as myfile:
-    ip_data(myfile)
+    parse_patent_data_file(myfile)
