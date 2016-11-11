@@ -11,7 +11,8 @@ def ip_data(myfile):
             dic["title"] = line[5:]
         if line.startswith("ABST"):
             dic["abstract"] = line[5:]
-    print(dic)
+
+    return dic
 
 
 with open("maps 225719.txt", "r", encoding="utf8")as myfile:
