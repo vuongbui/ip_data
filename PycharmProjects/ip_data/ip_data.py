@@ -16,10 +16,17 @@ def parse_patent_data_file(myfile):
 
 
 if __name__ == '__main__':
+    #set the location of the target input
+    target_file = "C:\PythonApps\VuongsWork\maps 225719.txt"
 
-    target_file = "maps 225719.txt"
+    #open the file
+    myfile = open(target_file, "r", encoding="utf8")
 
-    with open(target_file, "r", encoding="utf8") as myfile:
-        parsed_data = parse_patent_data_file(myfile)
+    #run the function we defined above, save 'dic' to the variable parsed_data
+    parsed_data = parse_patent_data_file(myfile)
 
+    #close the file, not necessary for small programs but a good habit to get into.
+    myfile.close()
+
+    #prints results
     print(parsed_data)
