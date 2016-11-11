@@ -21,3 +21,5 @@ if __name__ == '__main__':
 
     with open(target_file, "r", encoding="utf8") as myfile:
         parsed_data = parse_patent_data_file(myfile)
+
+    print(parsed_data)
